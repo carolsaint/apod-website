@@ -19,8 +19,16 @@
     background-color: black;
     align-self: center;
 }
+
 #imgOutput{
     display: flex;
-    background-color: blueviolet;
+    flex-direction: column;
+    background-color: darkgray;
     justify-content: center;
+    align-items: center;
+}
+
+#imgOut{
+    width: 500px;
+    height: 400px;
 }
