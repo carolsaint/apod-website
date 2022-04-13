@@ -1,10 +1,26 @@
 #root{
     background-color: gray;
     display: flex;
-    width: auto;
-    height: auto;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
-#input{
+#bar{
+    display: flex;
+    width:100%;
+    height: 60px;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#receive{
+    background-color: black;
     align-self: center;
+}
+#imgOutput{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
 }
