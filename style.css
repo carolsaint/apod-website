@@ -1,0 +1,10 @@
+#root{
+    background-color: gray;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+#input{
+    align-self: center;
+}
