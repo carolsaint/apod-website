@@ -5,6 +5,7 @@ $ ("#input").on("change", function (event){
     let img = $("#imgOut")
     let texto = $("#texto")
 
+
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=bZD0thHorWv70ZZhFwnL0MajObm3gQEy0euFry4s&date=${input.val()}`,
         success: function(resposta){
@@ -15,3 +16,7 @@ $ ("#input").on("change", function (event){
         }
     });
 });
+
+// if (input == 'none') {
+//     document.getElementById('#imgOut').style.display = 'none'
+// }

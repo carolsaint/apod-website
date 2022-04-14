@@ -1,31 +1,56 @@
 #root{
-    background-color: gray;
+    background-color: #000033;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
+@font-face {
+    font-family: tech;
+    src: url(./Fonts/ShareTechMono-Regular.ttf);
+}
+
 #bar{
     display: flex;
     width:100%;
-    height: 60px;
-    background-color: antiquewhite;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
+    font-family: tech;
+}
+
+.icon{
+    height: 35px;
+    width: 40px;
+}
+
+.logo{
+    height: 67px;
 }
 
 #receive{
     background-color: black;
     align-self: center;
+    color: #5297d3;
+    font-family: tech, monospace;
+}
+
+#texto{
+    background-color: white;
+    border: solid 2px #000033 ;
+    padding: 5px;
 }
 
 #imgOutput{
     display: flex;
     flex-direction: column;
-    background-color: darkgray;
+    background-color: #003b6f;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    font-family: tech, monospace;
 }
 
 #imgOut{
