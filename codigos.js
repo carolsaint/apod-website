@@ -1,8 +1,11 @@
+$("#imgOut").hide()
+
 $ ("#input").on("change", function (event){
     event.preventDefault();
 
     let input = $("#input")
     let img = $("#imgOut")
+    $("#imgOut").show()
     let texto = $("#texto")
 
 
@@ -17,6 +20,3 @@ $ ("#input").on("change", function (event){
     });
 });
 
-// if (input == 'none') {
-//     document.getElementById('#imgOut').style.display = 'none'
-// }
