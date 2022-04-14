@@ -16,6 +16,7 @@ $ ("#sub").on("click", function (event){
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=bZD0thHorWv70ZZhFwnL0MajObm3gQEy0euFry4s&date=${input.val()}`,
         success: function(resposta){
+            $("#input").attr("max", resposta.date)
             if (resposta.media_type == "image") {
                 if ($("#imgOut").show()) {
                     $("videoOut").hide()
@@ -29,5 +30,6 @@ $ ("#sub").on("click", function (event){
         }
         texto.text(resposta.explanation).show()
     },
+
 });
 })
