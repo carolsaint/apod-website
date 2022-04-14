@@ -1,9 +1,14 @@
 #root{
-    background-color: #000033;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    background-image: url(./IMGs/bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    width: 100%;
 }
 
 @font-face {
@@ -14,11 +19,21 @@
 #bar{
     display: flex;
     width:100%;
-    height: 70px;
+    height: 75px;
     background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: space-around;
     font-family: tech;
+}
+
+a{
+    text-decoration: none;
+}
+
+.icon:hover{
+    height: 40px;
+    width: 45px;
+    transition-duration: 0.5s;
 }
 
 .icon{
@@ -30,11 +45,23 @@
     height: 67px;
 }
 
+.logo:hover{
+    height: 73px;
+    transition-duration: 0.5s;
+}
+
 #receive{
-    background-color: black;
+    width: 30%;
+    display: flex;
     align-self: center;
-    color: #5297d3;
+    color: #9ab5ce;
     font-family: tech, monospace;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    height: 65px;
+    padding: 10px;
+    background-color: #003b6f93;
 }
 
 #texto{
@@ -46,7 +73,7 @@
 #imgOutput{
     display: flex;
     flex-direction: column;
-    background-color: #003b6f;
+    background-color: #00000066;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -56,4 +83,19 @@
 #imgOut{
     width: 500px;
     height: 400px;
+}
+
+#sub{
+    margin-top: 5px;
+    width: 70px;
+    background-color: #003b6f;
+    border: 1px solid #000033;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.582);
+    border-radius: 4px;
+}
+
+#sub:hover{
+    width: 75px;
+    height: 25px;
+    transition-duration: 0.5s;
 }
