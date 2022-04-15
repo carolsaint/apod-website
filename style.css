@@ -59,9 +59,10 @@ a{
     flex-direction: column;
     margin-bottom: 10px;
     align-items: center;
-    height: 65px;
+    height: 85px;
     padding: 10px;
     background-color: #003b6f93;
+    text-align: center;
 }
 
 #texto{

@@ -2,6 +2,9 @@ $("#imgOut").hide()
 $("#videoOut").hide()
 $("#texto").hide()
 
+let currentDate = new Date().toISOString().split("T")[0];
+
+$("#input").attr("max", currentDate)
 
 $ ("#sub").on("click", function (event){
     event.preventDefault();
@@ -16,7 +19,6 @@ $ ("#sub").on("click", function (event){
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=bZD0thHorWv70ZZhFwnL0MajObm3gQEy0euFry4s&date=${input.val()}`,
         success: function(resposta){
-            $("#input").attr("max", resposta.date)
             if (resposta.media_type == "image") {
                 if ($("#imgOut").show()) {
                     $("videoOut").hide()
